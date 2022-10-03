@@ -27,3 +27,10 @@ Nicknamed after the God of wealth, Plutus is a toy payments engine for reading a
 When it comes to handling `dispute`, `resolve`, or `chargeback` transactions, it's assumed that the manner in which the account should be updated will always be the same. It could be argued, that the account should be updated based on the type of transaction it was originally. For example, if a client disputes a withdrawal, should the available funds remain as is and only the held funds be increased? 
 
 If we did want to update the account based on what the original transaction type was, one way would be to extend the `Transaction` struct to have an `original_state` field. This field would store the original transaction type of the transaction. We couild then, access this field and used it to conditionally update the account.
+
+# **Improvements**:
+There are two account related structs; `Account` and `AccountRecord`. The `Account` struct is used to store the account information after we've deserialized it. `AccountRecord` is used to serialize the account data when writing to the file. One theoretical improvement could be to use only the `Account` struct. We could make `successful_transactions` optional. Then we can make use of serde's `rename` and `skip_serializing` field attributes.
+
+Another improvement would be to add additional tests for `read_transactions_from_csv`. As well as, adding tests for `write_accounts_to_csv`, since there are none at the moment.
+
+Presently we terminate execution whenever any error occurs. We could add logic to handle these errors when they propogate. This would allow us to the benefit of not necessarily terminating execution, every time.
