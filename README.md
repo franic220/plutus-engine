@@ -26,4 +26,4 @@ Nicknamed after the God of wealth, Plutus is a toy payments engine for reading a
 # **Assumptions**:
 When it comes to handling `dispute`, `resolve`, or `chargeback` transactions, it's assumed that the manner in which the account should be updated will always be the same. It could be argued, that the account should be updated based on the type of transaction it was originally. For example, if a client disputes a withdrawal, should the available funds remain as is and only the held funds be increased? 
 
-If we did want to update the account based on what the original transaction type was, one way would be to extend the `Transaction` struct to have a `original_state` field. This field would store the original transaction type of the transaction. We couild then, access this field and used it to conditionally update the account.
+If we did want to update the account based on what the original transaction type was, one way would be to extend the `Transaction` struct to have an `original_state` field. This field would store the original transaction type of the transaction. We couild then, access this field and used it to conditionally update the account.
