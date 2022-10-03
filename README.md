@@ -25,6 +25,11 @@ Nicknamed after the God of wealth, Plutus is a toy payments engine for reading a
 **transactions.csv**
 > Sample transaction data for the application to read. It includes rows with whitespace and rows with missing values.
 
+# **Running Plutus Engine**:
+Executing `cargo run -- transactions.csv > accounts.csv` in the plutus-engine directory will run the program and redirect output to `accounts.csv`. To view the output directly in the terminal, run `cargo run -- transactions.csv`. **The output in the terminal should look like so**:
+
+![plutus-output-screenshot](https://user-images.githubusercontent.com/52143693/193699004-58b50ead-bda2-4b13-9f47-cb03a8329538.png)
+
 # **Assumptions**:
 When it comes to handling `dispute`, `resolve`, or `chargeback` transactions, it's assumed that the manner in which the account should be updated will always be the same. It could be argued, that the account should be updated based on the type of transaction it was originally. For example, if a client disputes a withdrawal, should the available funds remain as is and only the held funds be increased? 
 
