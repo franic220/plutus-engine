@@ -8,7 +8,8 @@ Nicknamed after the God of wealth, Plutus is a toy payments engine for reading a
 - **chargeback**: decrease the held and total account funds by the amount previously disputed, immediately freeze (lock) the account
 
 # **File Structure**:
-
----
 **mapper.rs**
 > This file contains all of the relevant enums and structs. The enums are used to define custom error types (`ReaderError`) and transactions types (`TransactionType`).
+---
+**reader.rs**
+> This file contains all of the logic for reading and writing to files. The types defined in `mapper.rs` are utilized in this file to process transactions. Any tests associated with processing transaction data, are contained within this file.
