@@ -7,7 +7,7 @@ Nicknamed after the God of wealth, Plutus is a toy payments engine for reading a
 - **resolve**: increase the available funds by the amount previously disputed, and decrease the held funds by the amount previously disputed
 - **chargeback**: decrease the held and total account funds by the amount previously disputed, immediately freeze (lock) the account
 
-File Structure:
+**File Structure**:
 
 ---
 **mapper.rs**
