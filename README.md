@@ -9,7 +9,7 @@ Nicknamed after the God of wealth, Plutus is a toy payments engine for reading a
 
 # **File Structure**:
 **main.rs**
-> Executes `run`(found in `reader.rs`) to trigger the application. It also terminates executiuon when errors occur.
+> Executes `run`(found in `reader.rs`) to trigger the application. It also terminates execution when errors occur.
 ---
 **mapper.rs**
 > Contains all of the relevant enums and structs. The enums are used to define custom error types (`ReaderError`) and transactions types (`TransactionType`). The structs are used for defining the structure of the account data.
