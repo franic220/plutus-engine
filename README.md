@@ -8,6 +8,8 @@ Nicknamed after the God of wealth, Plutus is a toy payments engine for reading a
 - **chargeback**: decrease the held and total account funds by the amount previously disputed, immediately freeze (lock) the account
 
 # **File Structure**:
+![plutus-direcory-screenshot](https://user-images.githubusercontent.com/52143693/193697394-6bf10898-97cd-42a9-943f-a79b25ae46ed.png)
+
 **main.rs**
 > Executes `run`(found in `reader.rs`) to trigger the application. It also terminates execution when errors occur.
 ---
