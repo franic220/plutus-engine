@@ -16,3 +16,6 @@ Nicknamed after the God of wealth, Plutus is a toy payments engine for reading a
 ---
 **test-helpers.rs**
 > Defines several reusable helper functions, for improving the readability of various test functions.
+---
+**transactions.csv**
+> Sample transaction data for the application to read. It includes rows with whitespace and rows with missing values. 
